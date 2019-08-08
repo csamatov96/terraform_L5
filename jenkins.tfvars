@@ -6,6 +6,6 @@ vpc = "vpc-e0d5318b"
 ami = "ami-0d8f6eb4f641ef691"
 instance_type = "t2.micro"
 user = "ec2-user"
-domain = "acirrustech.com"
+domain = "mydomain.com"
 zone_id = "ZSBY94ENV7WM4" #Route 53 
 record = "buildserver" #from the left everything before . in an actual domain called 'record'
