@@ -4,5 +4,5 @@ resource "aws_route53_record" "r1soft" {
   name    = "r1soft.${var.domain}"
   type    = "A"
   ttl     = "300"
-  records = ["${aws_instance.jenkins.public_ip}"]
+  records = ["${aws_instance.r1soft.public_ip}"]
 }
