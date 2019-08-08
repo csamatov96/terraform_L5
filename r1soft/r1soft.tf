@@ -17,7 +17,7 @@ resource "aws_instance" "r1soft" { #1. creating an actual instance
         #3. running an actual tasks
         #https://linuxize.com/post/how-to-install-jenkins-on-centos-7/
         inline = [ 
-            "",
+            "sudo yum install telnet -y",
             "",
             "",
             "",
