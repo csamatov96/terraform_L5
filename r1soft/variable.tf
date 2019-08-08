@@ -13,7 +13,6 @@ variable "domain" {}
 
 variable "record" {}
 
-
-
+variable "key_name" {}
 
 
