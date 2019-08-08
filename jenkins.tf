@@ -7,6 +7,7 @@ resource "aws_instance" "jenkins" { #1. creating an actual instance
 
     #2. establishing a connection
     provisioner "remote-exec" {  
+        
         connection = {
             host = "${self.public_ip}"
             type = "ssh" #or 
