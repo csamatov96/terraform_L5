@@ -20,7 +20,7 @@ resource "aws_instance" "jenkins" { #1. creating an actual instance
             "sudo yum install java-1.8.0-openjdk-devel -y",
             "curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo | sudo tee /etc/yum.repos.d/jenkins.repo",
             "sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key",
-            "sudo yum install jenkins",
+            "sudo yum install jenkins -y", #
             "sudo systemctl start jenkins"
         ]
     }
