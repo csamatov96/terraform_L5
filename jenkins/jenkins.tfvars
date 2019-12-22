@@ -1,3 +1,4 @@
+region                      = "us-east-1" 
 Name                        = "jenkins"
 Env                         = "DEV"
 Dept                        = "DevOps"
