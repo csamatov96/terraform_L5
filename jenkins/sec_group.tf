@@ -1,5 +1,5 @@
 resource "aws_security_group" "sg_resource" {
-  name        = "jenkins" #
+  name        = "jenkins_sg" #
   description = "Allow SSH / HTTP traffic" #
   vpc_id      = var.vpc #
 
