@@ -1,5 +1,5 @@
 Name                        = "jenkins"
-Env                         = "dev"
+Env                         = "DEV"
 Dept                        = "DevOps"
 Created_by                  = "Chyngyzkan Samatov"
 vpc                         = "vpc-e0d5318b" #default VPC
