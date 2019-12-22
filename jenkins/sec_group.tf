@@ -1,4 +1,4 @@
-resource "aws_security_group" "jenkins" {
+resource "aws_security_group" "sg_resource" {
   name        = "jenkins" #
   description = "Allow inbound traffic" #
   vpc_id      = "${var.vpc}" #
