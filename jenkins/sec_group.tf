@@ -1,7 +1,7 @@
 resource "aws_security_group" "sg_resource" {
   name        = "jenkins" #
-  description = "Allow inbound traffic" #
-  vpc_id      = "${var.vpc}" #
+  description = "Allow SSH / HTTP traffic" #
+  vpc_id      = var.vpc #
 
   ingress { #
     from_port   = 22 #
@@ -25,9 +25,9 @@ resource "aws_security_group" "sg_resource" {
   }
 
   tags = { #
-      Name = "${var.Name}.public" #
-      Env = "${var.Env}" #
-      Created_by = "${var.Created_by}" #
-      Dept = "${var.Dept}" #
+      Name = var.Name.public #
+      Env =  var.Env #
+      Created_by = var.Created_by #
+      Dept = var.Dept #
   }
 }
