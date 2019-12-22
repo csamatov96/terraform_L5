@@ -25,7 +25,7 @@ resource "aws_security_group" "sg_resource" {
   }
 
   tags = { #
-      Name = var.Name.public #
+      Name = var.Name #
       Env =  var.Env #
       Created_by = var.Created_by #
       Dept = var.Dept #
