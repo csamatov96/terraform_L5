@@ -9,3 +9,4 @@ user        = "ec2-user"
 domain      = "csamatov.net"
 zone_id     = "Z6XWWD56QDJWX" #my hosted zone  
 record      = "buildserver" #from the left side everything before . called 'record'
+associate_public_ip_address = true

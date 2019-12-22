@@ -12,6 +12,7 @@ variable "zone_id" {}
 variable "domain" {}
 
 variable "record" {}
+variable " associate_public_ip_address" {}
 
 
 
