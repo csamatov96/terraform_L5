@@ -25,11 +25,12 @@ resource "aws_instance" "jenkins" {
             "sudo systemctl start jenkins"
         ]
     }
-}
 
-tags = { #
+    tags = { #
       Name = var.Name #
       Env =  var.Env #
       Created_by = var.Created_by #
       Dept = var.Dept #
+    }
 }
+
