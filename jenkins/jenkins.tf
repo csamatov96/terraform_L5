@@ -2,7 +2,7 @@
 resource "aws_instance" "jenkins" {  
     ami                         = var.ami #
     instance_type               = var.instance_type #
-    key_name                    = aws_key_pair.developer_key.id #
+    key_name                    = aws_key_pair.bastion_key.id #
     associate_public_ip_address = var.associate_public_ip_address
     security_groups             = [aws_security_group.sg_resource.name] #
 
