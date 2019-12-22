@@ -1,18 +1,18 @@
 #1. creating an actual instance
 resource "aws_instance" "jenkins" {  
-    ami                         = var.ami #
-    instance_type               = var.instance_type #
-    key_name                    = aws_key_pair.key_resource.id #
+    ami                         = var.ami 
+    instance_type               = var.instance_type 
+    key_name                    = aws_key_pair.key_resource.id 
     associate_public_ip_address = var.associate_public_ip_address
-    security_groups             = [aws_security_group.sg_resource.name] #
+    security_groups             = [aws_security_group.sg_resource.name] 
 
     #2. establishing a connection
     provisioner "remote-exec" {  
         connection  {
-            host = self.public_ip #
-            type = "ssh" #
-            user = var.user #
-            private_key = file("~/.ssh/id_rsa") #use that key whenever it creates an instance 
+            host = self.public_ip 
+            type = "ssh" 
+            user = var.user 
+            private_key = file("~/.ssh/id_rsa") #use that key, whenever it creates an instance 
         }
 
         #3. running an actual tasks
